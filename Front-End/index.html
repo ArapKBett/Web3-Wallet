@@ -5,19 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web3 Wallet</title>
-  <script src="scripts/app.js" defer></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Web3 Wallet</h1>
+  <header class="header">
+    <h1>Web3 Wallet</h1>
+  </header>
+  <nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+  <main class="main-content">
+    <h2>Welcome to Arap's Web3 Wallet</h2>
+    <p>Your secure and user-friendly web3 wallet solution.</p>
   <button id="createWallet">Create Wallet</button>
   <div id="walletDetails"></div>
+  </main>
+  <footer class="footer">
+    <p>© 2024 Arap Bett. All rights reserved.</p>
+  </footer>
+  <script src="scripts/app.js" defer></script>
   
-  <script>
-    document.getElementById('createWallet').addEventListener('click', async () => {
-      const response = await fetch('/create-wallet', { method: 'POST' });
-      const wallet = await response.json();
-      document.getElementById('walletDetails').innerText = JSON.stringify(wallet, null, 2);
-    });
-  </script>
 </body>
 </html>
