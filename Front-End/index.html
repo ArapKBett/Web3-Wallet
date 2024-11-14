@@ -18,10 +18,39 @@
     <a href="#">Contact</a>
   </nav>
   <main class="main-content">
-    <h2>Welcome to Arap's Web3 Wallet</h2>
-    <p>Your secure and user-friendly web3 wallet solution.</p>
-  <button id="createWallet">Create Wallet</button>
-  <div id="walletDetails"></div>
+    <section id="home">
+      <h2>Welcome to Web3 Wallet</h2>
+      <p>Your secure and user-friendly web3 wallet solution.</p>
+      <button id="createWallet">Create Wallet</button>
+      <div id="walletDetails"></div>
+    </section>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We are dedicated to providing the best web3 wallet experience. Our team is committed to security, usability, and innovation.</p>
+    </section>
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Secure Wallet Creation</li>
+        <li>Easy-to-use Interface</li>
+        <li>24/7 Customer Support</li>
+      </ul>
+    </section>
+    <section id="contact">
+  <h2>Contact Us</h2>
+  <form action="contact.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+    
+    <button type="submit">Submit</button>
+  </form>
+</section>
   </main>
   <footer class="footer">
     <p>© 2024 Arap Bett. All rights reserved.</p>
